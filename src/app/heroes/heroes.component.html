@@ -9,6 +9,19 @@
       <span class="badge">{{ hero.id }}</span>
       <span class="name">{{ hero.name }}</span>
     </button>
+    <!-- To list the hero in the list (not below): -->
+    <!-- <div *ngIf="hero === selectedHero">
+      <h2>{{ selectedHero.name | uppercase }}</h2>
+      <div>id: {{ selectedHero.id }}</div>
+      <div>
+        <label for="hero-name">Hero name:</label>
+        <input
+          id="hero-name"
+          [(ngModel)]="selectedHero.name"
+          placeholder="name"
+        />
+      </div>
+    </div> -->
   </li>
 </ul>
 
